@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 // Permite manejar cookies en las respuestas.
 app.use(cookieParser());
 // Rutas
+app.use('/', );
 app.use('/api/productos', productoRoutes);
 app.use("/api/categorias", categoriasRoutes);
 app.use("/api/auth", authRoutes);
